@@ -10,4 +10,5 @@ variant =
     |> String.downcase()
   end
 
-Code.require_file("#{variant}.exs", "apps/explorer/config/test")
+Code.require_file("#{variant}.exs", "config/test")
+Code.require_file("#{variant}.exs", "../indexer/config/test")
